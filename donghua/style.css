@@ -1,0 +1,104 @@
+:root {
+  --rotation: 90deg;
+  --container-width: 300px;
+  --container-height: 50px;
+  --element-width: 96%;
+  --element-height: 101%;
+  --element-bottom: -30%;
+  --element-right: -24%;
+  --outline-width: 1px;
+  --body-background-color: #0a061e;
+  --border-top-color: #ce92af;
+  --border-right-color: #00ffcc;
+}
+
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: var(--body-background-color);
+  font-family: "Operator Mono", menlo, monaco, monospace;
+  font-size: 14px;
+  color: white;
+}
+
+.settings-panel {
+  /* Remove this to enter adjustment mode */
+  display: none;
+  position: absolute;
+  max-width: 200px;
+  max-height: 435px;
+  overflow: auto;
+  padding: .5em;
+  background: #00000099;
+  border-radius: 6px;
+}
+
+.settings-panel-title {
+  cursor: pointer;
+}
+
+.settings-panel[open] .settings-panel-title {
+  cursor: default;
+}
+
+#settings {
+  position: relative;
+  z-index: 2;
+}
+
+.setting {
+  display: block;
+  margin-bottom: .5em;
+}
+
+.setting:first-of-type {
+  margin-top: 1em;
+}
+
+#scene {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#scene div {
+  width: var(--container-width);
+  height: var(--container-height);
+  border-top: var(--outline-width) solid var(--border-top-color);
+  border-right: var(--outline-width) solid var(--border-right-color);
+  position: relative;
+  border-radius: 100%;
+  transform: translateZ(0) rotate(var(--rotation));
+  animation:
+    portal-width 2.5s infinite,
+    portal-height 10s infinite;
+}
+
+#scene div div {
+  width: var(--element-width);
+  height: var(--element-height);
+  position: absolute;
+  bottom: var(--element-bottom);
+  right: var(--element-right);
+  animation: portal-element 2.5s infinite linear;
+}
+
+@keyframes portal-width {
+  50% {
+    width: 100px;
+  }
+}
+
+@keyframes portal-height {
+  50% {
+    height: 300px;
+  }
+}
+
+@keyframes portal-element {
+  50% {
+    width: 102%;
+  }
+}

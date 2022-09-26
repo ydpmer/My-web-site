@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Yudongping</title>
+<link rel="stylesheet" href="./donghua/style.css">
+<link rel="stylesheet" href="./donghua/button.css">
+</head>
+<body>
+<div id="scene"></div>
+<a href="./index.html">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    Welcome to My blog!
+</a>
+<details class="settings-panel">
+<summary class="settings-panel-title">Settings</summary>
+<div id="settings"></div>
+<button id="print">Print to console</button>
+</details>
+<template id="range-setting-template">
+<label class="setting">{id}: <span id="{id}-value">{value}</span>
+<br />
+<input id="{id}-input" type="range" min="{min}" max="{max}" value="{value}" />
+</label>
+</template>
+<template id="color-setting-template">
+<label class="setting">{id}: <span id="{id}-value">{value}</span>
+<br />
+<input id="{id}-input" type="color" value="{value}" />
+</label>
+</template>
+<script src="./donghua/script.js"></script>
+</body>
+</html>

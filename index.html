@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	<title>Yu Dongping</title>
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" href="./musicPlayer/font/iconfont.css">
+    <link rel="stylesheet" href="./musicPlayer/css/style.css">
+	<style>
+		#player{
+
+			left: 0px;
+			top: 110px;
+		}
+		.motor{
+			width: 340px;
+			height: 340px;
+		}
+		.container{
+			height: 600px;
+			width: 1500px;
+			left: 0px;
+			top: 0px;
+			position:absolute;
+		}
+		.under{
+			position: relative;
+		}
+		.ydp{
+			height: 1000px;
+			width: 1600px;
+		}
+		.col-xs-9{
+			height: 800px;
+		}
+		
+	</style>
+  </head>
+  <body>
+
+  	<!-- 右下角按钮 -->
+  	<!-- <button class="btn btn-default btn_right_bottom">写</button> -->
+  	<!-- 图片轮播 -->
+  	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  		<!-- Indicators -->
+  		<ol class="carousel-indicators">
+  			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+  			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+  			<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  			<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+  			<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+  			<li data-target="#carousel-example-generic" data-slide-to="5"></li>
+  		</ol>
+
+  		<!-- Wrapper for slides -->
+  		<div class="carousel-inner" role="listbox">
+  			<div class="item active">
+  				<img src="img/ic_p4.jpg">
+  				<p class="carousel-caption">
+  				This is my life!
+  				</p>
+  			</div>
+  			<div class="item">
+  				<img src="img/ic_p5.jpg">
+  				<p class="carousel-caption">
+					Write code!
+  				</p>
+  			</div>
+  			<div class="item">
+  				<img src="img/ic_p6.jpg">
+  				<p class="carousel-caption">
+  					Play games!
+  				</p>
+  			</div>
+  			<div class="item">
+  				<img src="img/ic_p7.jpg">
+  				<p class="carousel-caption">
+  					Listen to music!
+  				</p>
+  			</div>
+  			<div class="item">
+  				<img src="img/seemovie.jpg">
+  				<p class="carousel-caption">
+  					See a movie!
+  				</p>
+  			</div>
+  			<div class="item">
+  				<img src="img/Runing.jpg">
+  				<p class="carousel-caption">
+  					Running!
+  				</p>
+  			</div>
+  		</div>
+
+  		<!-- Controls -->
+  		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+  			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+  			<span class="sr-only">Previous</span>
+  		</a>
+  		<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+  			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+  			<span class="sr-only">Next</span>
+  		</a>
+  	</div>
+	<div class="under"><img class="ydp" src="./img/back.jpg" alt="">
+  	<!-- 技术日记 -->
+  	<div class="container div_divider">
+  		<!-- 分割线 -->
+  		<hr class="hr_1">Welcom to My Blog!<hr class="hr_2">
+  		<div class="row">
+  			<!-- 文章列表 -->
+  			<div class="col-xs-9">
+  				<div class="list-group div_article">
+  					<!-- 子头栏 -->
+  					<a href="#" class="list-group-item active item_article_first">
+  						<h4 class="list-group-item-heading">
+  							My Blog！My life and My time!
+  						</h4>
+  					</a>
+  					<!-- 文章列表 -->
+  					<div class="list-group-item item_article">
+  						<div class="row">
+  							<div class="div_center col-xs-9">
+  								<div class="list-group-item-heading div_article_title">
+  									<strong>
+  										mysql的安装
+  									</strong>
+  								</div>
+  								<p class="list-group-item-text div_article_content">
+									mysql安装及使用
+									@Yudp
+									
+									mysql的安装
+									官方下载链接点这里！！！...
+									<a href="./Blog/mysqlInstall.html">阅读更多</a>
+  								</p>
+  							</div>
+  							<!-- 右侧图片，信息 -->
+  							<div class="col-xs-3 div_right_info">
+  								<img class="iv_article img-rounded" src="img/mysql.jpg">
+  							</div>
+  						</div>
+  					</div>
+  					<div class="list-group-item item_article">
+  						<div class="row">
+  							<div class="div_center col-xs-9">
+  								<div class="list-group-item-heading div_article_title">
+  									<strong>
+  										买铅笔——JAVA
+  									</strong>
+  								</div>
+  								<p class="list-group-item-text div_article_content">
+									P老师需要去商店买n支铅笔作为小朋友们参加编程比赛的礼物。她发现商店一共有 3
+种包装的铅笔，不同包装内的铅笔数量有可能不同，价格也有可能不同。为了公平起 见，P老师决定只买同一种包装的铅笔。
+商店不允许将铅笔的包装拆开，因此P老师可能需要购买超过 n 支铅笔才够给小朋 友们发礼物。
+现在P老师想知道，在商店每种包装的数量都足够的情况下，要买够至少 n 支铅笔最少需要花费多少钱。...
+									<a href="./Blog/buyPencil.html">阅读更多</a>
+  								</p>
+  							</div>
+  							<!-- 右侧图片，信息 -->
+  							<div class="col-xs-3 div_right_info">
+  								<img class="iv_article img-rounded" src="img/java.jpg">
+  							</div>
+  						</div>
+  					</div>
+  					<div class="list-group-item item_article">
+  						<div class="row">
+  							<div class="div_center col-xs-9">
+  								<div class="list-group-item-heading div_article_title">
+  									<strong>
+  										查找字符串——JAVA
+  									</strong>
+  								</div>
+  								<p class="list-group-item-text div_article_content">
+									问题描述
+小Q想要匿名举报XX领导不务正业！ 小Q害怕别人认出他的字迹。 他选择从报纸上剪裁下来英文字母组成自己的举报信。 现在小Q找来了报纸，和自己的举报信的Txt，小Q有急事？？ 小Q跑去上厕所了？？ 小Q让你帮他完成？？ 小Q为什么这么坑？？工作之前你当然要确定一下是否能够完成。
+
+输入描述：
+第一行输入报纸上的英文。
+第二行输入小Q匿名信的内容。 (1<=len(str)<=10000)
+
+输出描述： 如果能完成输出”Yes”，否则输出”No”。
+
+...
+									<a href="./Blog/findString.html">阅读更多</a>
+								</p>
+  							</div>
+  							<!-- 右侧图片，信息 -->
+  							<div class="col-xs-3 div_right_info">
+  								<img class="iv_article img-rounded" src="img/java.jpg">
+  							</div>
+  						</div>
+  					</div>
+  					<div class="list-group-item item_article">
+  						<div class="row">
+  							<div class="div_center col-xs-9">
+  								<div class="list-group-item-heading div_article_title">
+  									<strong>
+  										最长递增区间——JAVA
+  									</strong>
+  								</div>
+  								<p class="list-group-item-text div_article_content">
+									题目描述
+									题目描述
+									给一个无序数组，求最长递增的区间长度。
+									如：[5,2,3,8,1,9] 最长区间 2,3,8 长度为 3。
+									
+									输入描述：
+									第一行输入整数n。
+									第二行输入n个整数。
+									
+									输出描述：
+									输出最长递增的区间长度。
+									
+									示例
+									输入 6 5 2 3 8 1 9
+									输出 3...
+									<a href="./Blog/longAddLength.html">阅读更多</a>
+  								</p>
+  							</div>
+  							<!-- 右侧图片，信息 -->
+  							<div class="col-xs-3 div_right_info">
+  								<img class="iv_article img-rounded" src="img/java.jpg">
+  								<div>2022/09/22 11:25</div>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+  			<!-- 右侧 -->
+  			<div class="col-xs-3 div_record">
+  				<!-- 用户信息 -->
+  				<div class="jumbotron div_userinfo">
+  					<img class="iv_user_head img-circle" src="img/ic_p10.png">
+  					<div style="display: inline-block; margin-left: 12px;font-size: 18px;">余冬平</div>
+  				</div>
+				<img class="motor" src="./img/ic_me1.jpg" alt="">
+  				<!-- 随手记录 -->
+  				<div style="display: flex;">
+  					<div style="flex: 1"><hr></div>
+  					<div style="text-align: center;line-height: 48px;color: #34374C">听听音乐，放松心情</div>
+  					<div style="flex: 1"><hr></div>
+  				</div>
+				  <div id="player">
+					<!-- 歌曲信息模块 -->
+					<div id="player-content1">
+						<!-- 歌曲名 -->
+						<div class="music-name"></div>
+						<!-- 歌手名 -->
+						<div class="artist-name"></div>
+						<!-- 歌曲时间 -->
+						<div class="time">
+							<!-- 当前播放的时间 -->
+							<div class="current-time"></div>
+							<!-- 歌曲总时长 -->
+							<div class="total-time"></div>
+						</div>
+						<!-- 进度条 -->
+						<div id="s-area">
+							<!-- 鼠标移动到进度条上，显示的时间信息 -->
+							<div id="ins-time"></div>
+							<!-- 鼠标移动到进度条上，进度条变暗部分-->
+							<div id="s-hover"></div>
+							<!-- 表示当前歌曲播放进度的蓝色进度条 -->
+							<div id="seek-bar"></div>
+						</div>
+					</div>
+			
+					<!-- 控制模块 -->
+					<div id="player-content2">
+						<!-- 左侧歌曲封面旋转模块 -->
+						<div class="music-imgs">
+							<!-- 封面图 -->
+							<div class="img"></div>
+							<!-- 歌曲缓冲时的提示文字 -->
+							<div id="buffer-box">缓冲…</div>
+						</div>
+						<!-- 右侧歌曲操作模块 -->
+						<div class="player-controls">
+							<!-- 上一首按钮 -->
+							<div class="btn prev iconfont">&#xe603;</div>
+							<!-- 暂停/播放 按钮 -->
+							<div class="btn play-pause icon-jiediankaishi iconfont"></div>
+							<!-- 下一首按钮 -->
+							<div class="btn next iconfont">&#xe602;</div>
+						</div>
+					</div>
+				</div>
+  			</div>
+  		</div>
+  		<!-- 登录模态框 -->
+  		<div class="modal fade bs-example-modal-sm" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  			<div class="modal-dialog modal-sm" role="document">
+  				<div class="modal-content">
+  					<div class="modal-header">
+  						<div class="modal-title" id="myModalLabel" style="text-align: center;">登录</div>
+  					</div>
+  					<div class="modal-body">
+  						<form class="form-horizontal" style="padding: 12px;">
+  							<div class="form-group">
+  								<input type="text" class="form-control" id="inputEmail3" placeholder="账户名">  		
+  							</div>
+  							<div class="form-group">			
+  								<input type="password" class="form-control" id="inputPassword3" placeholder="密码">
+  							</div>
+  						</form>
+  					</div>
+  					<div class="modal-footer" style="text-align: center;">
+  						<button type="button" class="btn btn-primary" style="width: 100%">Login</button>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+	</div>
+
+
+  	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  	<script src="js/jquery-3.3.1.min.js"></script>
+  	<!-- Include all compiled plugins (below), or include individual files as needed -->
+  	<script src="js/bootstrap.min.js"></script>
+  	<script src="js/init.js" type="text/script"></script>
+  	<script src="js/util.js"></script>
+	  <script src="./musicPlayer/js/jquery-3.4.1.min.js"></script>
+	  <script src="./musicPlayer/js/index.js"></script>
+  </body>
+  </html>
